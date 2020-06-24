@@ -49,3 +49,5 @@ src/Makefile
 src/Makefile.in
 src/exprcalc
 stamp-h1
+config.h.in~
+exprcalc-*.tar.gz
