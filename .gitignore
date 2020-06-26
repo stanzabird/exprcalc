@@ -53,3 +53,6 @@ config.h.in~
 exprcalc-*.tar.gz
 
 vs/.vs
+vs/Debug
+vs/Release
+vs/x64
