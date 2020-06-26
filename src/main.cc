@@ -6,7 +6,10 @@
 
 #include <iostream>
 
+template<typename T> using varmap = std::map<std::string, T>;
+
 int main() {
+
 
   exprcalc::exprcalc_t calc("1+41");
 
@@ -17,7 +20,9 @@ int main() {
     return 1;
   }
 
-  std::cout << calc.eval(std::map<std::string,exprcalc::number_t>()) << std::endl;
+  calc.bind(varmap<exprcalc::number_t>());
+
+  std::cout << calc.eval() << std::endl;
   
   return 0;
 }

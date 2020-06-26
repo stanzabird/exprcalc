@@ -15,7 +15,8 @@ namespace exprcalc {
 
     exprcalc_t(const std::string& expr) {}
     compile_result_t compile() { return compile_result_t(); }
-    number_t eval(const std::map<std::string,number_t>& variables) { return number_t(); }
+    void bind(const std::map<std::string,number_t>& constvars) {}
+    number_t eval(const std::map<std::string,number_t>& vars = std::map<std::string,number_t>()) { return number_t(); }
   };
 }
 
