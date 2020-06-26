@@ -51,3 +51,5 @@ src/exprcalc
 stamp-h1
 config.h.in~
 exprcalc-*.tar.gz
+
+vs/.vs
